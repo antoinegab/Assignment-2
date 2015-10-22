@@ -5,28 +5,28 @@ if(isset($_POST['Username']) && $_POST['Username'] !=null){
 	$Username= $mysqli->real_escape_string($_POST['Username']);
 } 
 else {
-	die("bede masesak ye");
+	die("Please fill out the username");
 }
 if(isset($_POST['Loginname']) && $_POST['Loginname'] !=null){
 	$Loginname=$mysqli->real_escape_string($_POST['Loginname']);
 	
 } 
 else {
-	die("bede masesak ye");
+	die("Please fill out the loginname");
 }
 if(isset($_POST['Email']) && $_POST['Email'] !=null){
 	$Email=$mysqli->real_escape_string($_POST['Email']);
 	
 } 
 else {
-	die("bede masesak ye");
+	die("Please fill out the email");
 }
 if(isset($_POST['Guestbook']) && $_POST['Guestbook'] !=null){
 	$Guestbook=$mysqli->real_escape_string($_POST['Guestbook']);
 	
 } 
 else {
-	die("bede masesak ye");
+	die("Please fill out the comment");
 }
 
 

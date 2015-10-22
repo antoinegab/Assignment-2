@@ -70,15 +70,17 @@ if (x == null || x == "" ) {
 
 
 <div id="section">
-<form name="myForm" action="demo_form.asp"
-onsubmit="return validateForm()" method="post">
-<br>
-       First Name: <input type="text" name="fname"style="margin-left:10px;"/> <br><br>
-       Last Name:  <input type="text" name="lname"style="margin-left:12px;"/> <br><br>
-	   Comment:  <input type="text" name="comment"style="margin-left:18px;height:100px;"/>
-      <br><br> <br> <br>
+<form method="POST" action="login.php" class="login">
 
-<input type="submit" value="Submit"style="margin-top:60px;margin-left:12px;"/>
+<br>
+       User name: <input type="text" name="Username"style="margin-left:22px;"/> <br><br>
+       Login name:  <input type="Loginname" name="Loginname"style="margin-left:15px;"/> <br><br>
+	    Email:  <input type="Email" name="Email"style="margin-left:52px;"/> <br><br>
+		
+	   Comment:  <input type="Guestbook" name="Guestbook"style="margin-left:27px;height:100px;"/>
+      <br><br> <br> 
+
+<input type="submit" value="Login"style="margin-top:60px;margin-left:12px;"/>
 </form>
 </div>
 

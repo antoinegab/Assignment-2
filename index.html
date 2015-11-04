@@ -10,11 +10,56 @@
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <title>CSS MenuMaker</title>
 </head>
+<script>
+function overboundary(){
+ 
+alert("Why are you hovering?");
 
+}
+function click1(){
+document.body.
+style.backgroundColor="red"
+
+}
+function click2(){
+document.body.style.backgroundColor="yellow"
+
+}
+function click3(){
+document.body.style.backgroundColor="green"
+
+}
+function click4(){
+document.body.style.backgroundColor="black"
+
+}
+function click5(){
+document.body.style.backgroundColor="silver"
+
+}
+</script>
+<script>
+function random(){
+ var random=Math.round(Math.random()*5)
+    var links=new Array()
+    links[0]="http://slashdot.org"
+    links[1]="http://thinkgeek.com"
+    links[2]="http://www.despair.com"
+    links[3]="http://www.redbubble.com"
+    links[4]="http://www.googleresearch.blogspot.com"
+    links[5]="http://www.developers.google.com/speed/libraries/"
+   
+   
+ 
+    window.location=links[random]
+
+
+}
+</script>
 <body>
 
 <div id="header">
-<img src="download.jpe" alt="Mountain View" style="width:120px;height:120px;float:left;">
+<img src="download.jpe" alt="Mountain View" onmouseover="overboundary()" style="width:120px;height:120px;float:left;">
 <h1>Assg.1: CSS, JavaScript and Forms<br></h1>
 <h2>Brought to you by Antoine Gabriel</h2>
 
@@ -35,7 +80,7 @@
             </ul>
          </li>
          
-		  <li><a href="index4.html"><span>Guest Book</span></a></li>
+		  <li><a href="index.html"><span>Guest Book</span></a></li>
             <ul>
              
             </ul>
@@ -51,13 +96,26 @@
 
 
 <div id="section">
-<p>My name is antoine gabriel, i am a computer science student.  I wrote about me in the first assignement sooo i hope you like my website.  My site is not responsive and you have a big screen so please zoom in <3 175% zoom should be great
+<h2>Welcome to may assignment 1 page.</h2>
+<p>
+Welcome to may assignment 1 page.
 </p>
+<button type="button" onclick="click1()" style="background-color:red">Red</button>
+<button type="button" onclick="click2()" style="background-color:yellow">Yellow</button>
+<button type="button"onclick="click3()" style="background-color:green">Green </button>
+<button type="button" onclick="click4()"style="background-color:black">Black</button>
+<button type="button"onclick="click5()" style="background-color:silver">Silver</button>
+
+
+<form>
+<p>
+<input type="button" value="Click Me!" onClick="random()">
+</p>
+</form>
 </div>
 
 
 <div id="nav3">
-<img src="ab.png" alt="Mountain View" style="width:120px;height:600px;margin-left:23px;">
 </div>
 
 

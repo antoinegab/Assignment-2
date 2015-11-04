@@ -29,11 +29,35 @@ if (x == null || x == "" ) {
 }
 
 }
+
+function overboundary(){
+ 
+alert("Why are you hovering?");
+
+}
+function random(){
+ var random=Math.round(Math.random()*5)
+    var links=new Array()
+    links[0]="http://slashdot.org"
+    links[1]="http://thinkgeek.com"
+    links[2]="http://www.despair.com"
+    links[3]="http://www.redbubble.com"
+    links[4]="http://www.googleresearch.blogspot.com"
+    links[5]="http://www.developers.google.com/speed/libraries/"
+   
+   
+ 
+    window.location=links[myrandom]
+
+
+}
 </script>
+
 <body>
 
 <div id="header">
-<img src="download.jpe" alt="Mountain View" style="width:120px;height:120px;float:left;">
+<img src="download.jpe" alt="Mountain View" id="harm"; onmouseover="overboundary()" style="width:120px;height:120px;float:left;">
+
 <h1>Assg.1: CSS, JavaScript and Forms<br></h1>
 <h2>Brought to you by Antoine Gabriel</h2>
 
@@ -54,7 +78,7 @@ if (x == null || x == "" ) {
             </ul>
          </li>
          
-		  <li><a href="index.html"><span>Guest Book</span></a></li>
+		  <li><a href="index2.html"><span>Guest Book</span></a></li>
             <ul>
              
             </ul>
@@ -69,25 +93,23 @@ if (x == null || x == "" ) {
 
 
 
-<div id="section">
-<form method="POST" action="login.php" class="login">
-
+<form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
 <br>
-       User name: <input type="text" name="Username"style="margin-left:22px;"/> <br><br>
-       Login name:  <input type="Loginname" name="Loginname"style="margin-left:15px;"/> <br><br>
-	    Email:  <input type="Email" name="Email"style="margin-left:52px;"/> <br><br>
-		
-	   Comment:  <input type="Guestbook" name="Guestbook"style="margin-left:27px;height:100px;"/>
-      <br><br> <br> 
+       First Name: <input type="text" name="fname"style="margin-left:10px;"> <br><br>
+       Last Name:  <input type="text" name="lname"style="margin-left:12px;"> <br><br>
+	   Comment:  <input type="text" name="lname"style="margin-left:18px;height:100px;">
+      <br><br> <br> <br>
 
-<input type="submit" value="Login"style="margin-top:60px;margin-left:12px;"/>
+<input type="submit" value="Submit"style="margin-top:60px;margin-left:12px;>
 </form>
+
+
+
 </div>
 
 
-
-<div id="nav3">
-<img src="ab.png" alt="Mountain View" style="width:120px;height:600px;margin-left:23px;">
+<div id="nav2">
 </div>
 
 
